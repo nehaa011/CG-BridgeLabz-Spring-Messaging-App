@@ -1,10 +1,10 @@
-package com.example.springmessangingapp;
+package com.Spring.HelloProject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringMessangingApplicationTests {
+class HelloProjectApplicationTests {
 
 	@Test
 	void contextLoads() {

@@ -8,11 +8,11 @@
 		<version>3.4.3</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>springmessangingapp</artifactId>
+	<groupId>com.Spring</groupId>
+	<artifactId>HelloProject</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>SpringMessanging</name>
-	<description>Demo project for Spring Boot</description>
+	<name>HelloProject</name>
+	<description>Project for respond hello messages to the User.</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -30,10 +30,6 @@
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>

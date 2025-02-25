@@ -1,13 +1,14 @@
-package com.example.springmessangingapp;
+package com.Spring.HelloProject;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringMessangingApplication {
+public class HelloProjectApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringMessangingApplication.class, args);
+
+		SpringApplication.run(HelloProjectApplication.class, args);
 	}
 
 }
