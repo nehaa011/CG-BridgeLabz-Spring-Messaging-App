@@ -29,9 +29,16 @@ public class HelloController {
 
 
     //UC4: Use POST Request and pass first name and last name in the Body
-    @PostMapping("/greet")
-    public String sayHello(@RequestBody HelloDTO user){
-        return "Hello, " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
+    //@PostMapping("/greet")
+    //public String sayHello(@RequestBody HelloDTO user){
+    //    return "Hello, " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
+    //}
+
+
+    //UC5: PUT request with Path Variable (first name) and Query Parameter (last name)
+    @GetMapping("/put/{firstName}")
+    public String sayHello( @PathVariable String firstName, @RequestParam String lastName){
+        return "Hello, " + firstName + " " + lastName + " from BridgeLabz";
     }
 
 
