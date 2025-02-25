@@ -22,9 +22,17 @@ public class HelloController {
 
 
     //UC3: GET request with a path variable
-    @GetMapping("/{name}")
-    public String sayHello(@PathVariable String name){
-        return "Hello, " + name + " from BridgeLabz";
+    //@GetMapping("/{name}")
+    //public String sayHello(@PathVariable String name){
+    //    return "Hello, " + name + " from BridgeLabz";
+    //}
+
+
+    //UC4: Use POST Request and pass first name and last name in the Body
+    @PostMapping("/greet")
+    public String sayHello(@RequestBody HelloDTO user){
+        return "Hello, " + user.getFirstName() + " " + user.getLastName() + " from BridgeLabz";
     }
+
 
 }
