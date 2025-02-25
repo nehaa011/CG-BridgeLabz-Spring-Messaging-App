@@ -15,11 +15,16 @@ public class HelloController {
 
 
      //UC2: GET request with a query parameter
-     @GetMapping
-     public String sayHello(@RequestParam String name){
+     //@GetMapping
+     //public String sayHello(@RequestParam String name){
+     //   return "Hello, " + name + " from BridgeLabz";
+     //}
+
+
+    //UC3: GET request with a path variable
+    @GetMapping("/{name}")
+    public String sayHello(@PathVariable String name){
         return "Hello, " + name + " from BridgeLabz";
-     }
-
-
+    }
 
 }
